@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Web Developer</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add typed.js for text animation -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+    <!--  Navbar section-->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">Port<span class="logo-highlight">folio</span></span>
+                </a>
+            </div>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link active">
+                    <i class="fas fa-home"></i>
+                    <span>Home</span>
+                </a>
+                <a href="#about" class="nav-link">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a href="#skills" class="nav-link">
+                    <i class="fas fa-code"></i>
+                    <span>Skills</span>
+                </a>
+                <a href="#projects" class="nav-link">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </a>
+                <a href="#contact" class="nav-link">
+                    <i class="fas fa-envelope"></i>
+                    <span>Contact</span>
+                </a>
+            </div>
+
+            <div class="nav-actions">
+                <!-- Theme Selector -->
+                <div class="theme-selector">
+                    <button class="theme-btn" id="themeToggle">
+                        <i class="fas fa-palette"></i>
+                    </button>
+                    <div class="theme-dropdown">
+                        <div class="theme-option" data-theme="light">
+                            <i class="fas fa-sun"></i>
+                            <span>Light</span>
+                        </div>
+                        <div class="theme-option" data-theme="dark">
+                            <i class="fas fa-moon"></i>
+                            <span >Dark</span>
+                        </div>
+                        <div class="theme-option" data-theme="blue">
+                            <i class="fas fa-water"></i>
+                            <span>Blue</span>
+                        </div>
+                        <div class="theme-option" data-theme="purple">
+                            <i class="fas fa-gem"></i>
+                            <span>Purple</span>
+                        </div>
+                        <div class="theme-option" data-theme="green">
+                            <i class="fas fa-leaf"></i>
+                            <span>Green</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Button -->
+                <!-- <a href="#contact" class="nav-btn">
+                    Let's Talk
+                    <i class="fas fa-arrow-right"></i>
+                </a> -->
+
+                <!-- Mobile Menu Toggle -->
+                <div class="nav-toggle">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-left" data-aos="fade-right">
+                    <div class="hero-badge">
+                        <span class="badge-dot"></span>
+                        <span>Welcome to my portfolio..!</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Hi, Developer <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I'm a passionate Web Developer with expertise in creating responsive and user-friendly web applications. I specialize in:
+                    </p>
+
+                    <div class="skill-icons">
+                        <div class="skill-icon" data-tooltip="HTML5">
+                            <i class="fab fa-html5"></i>
+                        </div>
+                        <div class="skill-icon" data-tooltip="CSS3">
+                            <i class="fab fa-css3-alt"></i>
+                        </div>
+                        <div class="skill-icon" data-tooltip="JavaScript">
+                            <i class="fab fa-js"></i>
+                        </div>
+                        <div class="skill-icon" data-tooltip="React">
+                            <i class="fab fa-react"></i>
+                        </div>
+                        <div class="skill-icon" data-tooltip="Node.js">
+                            <i class="fab fa-node-js"></i>
+                        </div>
+                       
+                        <div class="skill-icon" data-tooltip="Git">
+                            <i class="fab fa-git-alt"></i>
+                        </div>
+                        <!-- <div class="skill-icon" data-tooltip="Database">
+                            <i class="fas fa-database"></i>
+                        </div> -->
+                    </div>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="hero-btn primary">
+                            View My Work
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <line x1="5" y1="12" x2="19" y2="12"></line>
+                                <polyline points="12 5 19 12 12 19"></polyline>
+                            </svg>
+                        </a>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <span class="stat-number">87%</span>
+                                <span class="stat-label">Client Satisfaction</span>
+                            </div>
+                            <div class="stat-divider"></div>
+                            <div class="stat">
+                                <span class="stat-number">30+</span>
+                                <span class="stat-label">Projects Completed</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- <div class="hero-links">
+                        <div class="social-links">
+                            <a href="#" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                        <div class="scroll-hint">
+                            <span>Scroll Down</span>
+                            <i class="fas fa-arrow-down"></i>
+                        </div>
+                    </div> -->
+                </div>
+
+                <div class="hero-right" data-aos="fade-left">
+                    <div class="hero-image-wrapper">
+                        <img src="assets/logo.jpeg" alt="Developer Profile" class="hero-image">
+                      <!-- <div class="experience-card"> 
+                            <div class="card-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <div class="card-content">
+                                <span>Full Stack Developer</span>
+                                <small>React & Node.js</small>
+                            </div>
+                        </div> 
+                        <div class="projects-card">
+                            <div class="card-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="card-content">
+                                <span>50+ Projects</span>
+                                <small>Completed</small>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="tech-stack">
+                        <div class="tech-item" data-tooltip="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Github">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="tech-item" data-tooltip="Youtube">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-container">
+            <h2 class="section-title" data-aos="fade-up">
+                About <span class="highlight">Me</span>
+            </h2>
+            
+            <div class="about-content">
+                <div class="about-left" data-aos="fade-right">
+                    <div class="about-image-container">
+                        <img src="assets/about.jpeg" alt="Profile Picture" class="about-img">
+                        <div class="experience-box">
+                            <span class="number">3+</span>
+                            <span class="text">Years of<br>Experience</span>
+                        </div>
+                        <div class="about-shapes">
+                            <div class="shape shape-1"></div>
+                            <div class="shape shape-2"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-right" data-aos="fade-left">
+                    <div class="about-heading">
+                        <h3>Web Developer & Graphic Designer</h3>
+                    </div>
+                    <div class="about-description">
+                        <p class="about-subtext">Crafting digital experiences with code and creativity. 
+                        I'm a passionate Web Developer with expertise in creating responsive and user-friendly web applications. I specialize in:</p>
+                        
+                        <div class="specialties">
+                            <div class="specialty-item">
+                                <i class="fas fa-laptop-code"></i>
+                                <div class="specialty-text">
+                                    <h4>Web Development</h4>
+                                    <p>Building responsive and dynamic websites</p>
+                                </div>
+                            </div>
+                            <div class="specialty-item">
+                                <i class="fas fa-mobile-alt"></i>
+                                <div class="specialty-text">
+                                    <h4>Graphic Design</h4>
+                                    <p>Creating unique & modern designs for professional and custom</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="achievement-grid">
+                            <div class="achievement-item">
+                                <span class="achievement-number">30+</span>
+                                <span class="achievement-text">Projects<br>Completed</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">20+</span>
+                                <span class="achievement-text">Happy<br>Clients</span>
+                            </div>
+                            <div class="achievement-item">
+                                <span class="achievement-number">80%</span>
+                                <span class="achievement-text">Client<br>Satisfaction</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="skills-container">
+            <h2 class="section-title" data-aos="fade-up">
+                My <span class="highlight">Skills</span>
+            </h2>
+
+            <div class="skills-grid">
+                <!-- Frontend -->
+                <div class="skill-card" data-aos="zoom-in">
+                    <h3>Frontend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fab fa-html5"></i>
+                            <span>HTML5</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-css3-alt"></i>
+                            <span>CSS3</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-js"></i>
+                            <span>JavaScript</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 70%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Backend -->
+                <div class="skill-card" data-aos="zoom-in">
+                    <h3>Backend</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-aws"></i>
+                            <span>AWS</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 72%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-git"></i>
+                            <span>Git & GitHub</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>node.js</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Tools -->
+                <div class="skill-card" data-aos="zoom-in">
+                    <h3>Tools</h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <i class="fa-brands fa-searchengin"></i>
+                            <span>Netlify</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-file-excel"></i>
+                            <span>Excel</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fa-solid fa-brush"></i>
+                            <span>Canva</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <i class="fab fa-figma"></i>
+                            <span>Figma</span>
+                            <div class="skill-progress">
+                                <div class="progress-bar" style="width: 80%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="projects-container">
+            <h2 class="section-title" data-aos="fade-up">
+                Featured <span class="highlight">Projects</span>
+            </h2>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-aos="fade-up">
+                    <span class="project-tag">Web dev</span>
+                    <div class="project-header">
+                        <img src="assets/JDMS430.png" alt="JDM Studio430 Website">
+                    </div>
+                    <div class="project-body">
+                        <h3>JDM Studio430 Website</h3>
+                        <p>A Clean, engaging, interactive and responsive platform for JDM Studio430's creative works.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://jdm-studio430.netlify.app/" class="project-btn primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Preview
+                            </a>
+                            <a href="https://github.com/dineshit27/jdm-studio430-website" class="project-btn secondary">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-aos="fade-up">
+                    <span class="project-tag">Web Dev</span>
+                    <div class="project-header">
+                        <img src="assets/tech430.png" alt="E-commerce website">
+                    </div>
+                    <div class="project-body">
+                        <h3>E-commerce Website</h3>
+                        <p>A modern and interactive Tech and gadget store platform with virtual gadgets, application, sales and discount with more features.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://tech-hub430.netlify.app/" class="project-btn primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Preview
+                            </a>
+                            <a href="https://github.com/dineshit27/TechnoHacks-Ecommerce-Website-Tech-hub430" class="project-btn secondary">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up">
+                    <span class="project-tag">Web Design</span>
+                    <div class="project-header">
+                        <img src="assets/jdmpark430.png" alt="Real Estate Platform">
+                    </div>
+                    <div class="project-body">
+                        <h3>JDM Park430</h3>
+                        <p>A modern and interactive hotel web design platform which has advanced property search, dashboard with more features.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://jdm-park.netlify.app/" class="project-btn primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Preview
+                            </a>
+                            <a href="https://github.com/dineshit27/TechnoHacks-LandingPage-JDM-Park430" class="project-btn secondary">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" data-aos="fade-up">
+                    <span class="project-tag">Web Design</span>
+                    <div class="project-header">
+                        <img src="assets/myport.png" alt="My portfolio">
+                    </div>
+                    <div class="project-body">
+                        <h3>Responsive Portfolio Website</h3>
+                        <p>A Clean, engaging, interactive and responsive portfolio website for myself.</p>
+                        <div class="tech-badges">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                            <span>Netlify</span>
+                        </div>
+                        <div class="project-buttons">
+                            <a href="https://dinesh-portfolio.netlify.app/" class="project-btn primary">
+                                <i class="fas fa-external-link-alt"></i>
+                                Live Preview
+                            </a>
+                            <a href="https://github.com/dineshit27/TechnoHacks-Portfolio-Website-MDinesh" class="project-btn secondary">
+                                <i class="fab fa-github"></i>
+                                Source Code
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="contact-container">
+            <h2 class="section-title" data-aos="fade-up">
+                Let's <span class="highlight">Connect</span>
+            </h2>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-card">
+                        <h3>Let's create something amazing together!</h3>
+                        <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
+                        
+                        <div class="contact-details">
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Location</h4>
+                                    <p>Chennai, Tamilnadu, India</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Mail</h4>
+                                    <p>m.dinesh.it278@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <div class="icon-box">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="info">
+                                    <h4>Phone</h4>
+                                    <p>+91 81221 29450</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-links">
+                            <a href="https://github.com/dineshit27" class="social-link">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://in.linkedin.com/in/m-dinesh-d30" class="social-link">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="mailto:m.dinesh.it27@gmai.con" class="social-link">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_dinx_pvt_430" class="social-link">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper" data-aos="fade-left">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label>Your Name</label>
+                            <input type="text" placeholder="Dinesh" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Email</label>
+                            <input type="email" placeholder="m.dinesh.it27@gmail.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Subject</label>
+                            <input type="text" placeholder="Project Discussion" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message</label>
+                            <textarea placeholder="Write your message here..." required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            Send Message
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Let's Connect</h3>
+                    <p class="footer-description">Feel free to reach out for collaborations or just a friendly hello</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">Skills</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h3 class="footer-title">Contact Info</h3>
+                    <div class="footer-contact">
+                        <p><i class="fas fa-envelope"></i> codewithpanda28@gmail.com</p>
+                        <p><i class="fas fa-phone"></i> +91 8252472186</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Jharkhand, India</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-copyright">
+                    <p>&copy; 2025 NexCodeUI. All rights reserved.</p>
+                </div>
+                <div class="footer-extra">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
