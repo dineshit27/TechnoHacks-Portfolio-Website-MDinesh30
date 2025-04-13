@@ -11,6 +11,10 @@ This is the repository for my personal portfolio website, showcasing my skills, 
 Explore the live version of my portfolio here:  
 [![Demo](https://img.shields.io/badge/Demo-Available-blue)](https://mdinesh-portfolio.netlify.app/)
 
+![GitHub stars](https://img.shields.io/github/stars/dineshit27/TechnoHacks-Portfolio-Website-MDinesh30?style=social)
+![GitHub forks](https://img.shields.io/github/forks/dineshit27/TechnoHacks-Portfolio-Website-MDinesh30?style=social)
+![License](https://img.shields.io/github/license/dineshit27/TechnoHacks-Portfolio-Website-MDinesh30?style=social)
+
 ## Key Features 🔑
 
 - **Sleek, Modern Design**: Tailored for a smooth, visually appealing user experience.
