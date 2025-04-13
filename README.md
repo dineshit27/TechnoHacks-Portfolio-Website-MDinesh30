@@ -1,4 +1,7 @@
-# Dinesh's Portfolio ✨
+# TechnoHacks - Dinesh's Portfolio Website ✨
+I have successfully completed my **TechnoHacks EduTech Official** Web Design & Development Internship in the month of April'25. Thanks for TechnoHacks EduTech Official For giving Me the opportunity.
+<br>
+**Task -3 :** Build a Personal Portfolio website.
 
 Welcome to my digital space! 🚀  
 This is the repository for my personal portfolio website, showcasing my skills, freelance projects, and my journey in the world of design and data analytics. The site is crafted with a clean, modern design and is fully responsive to ensure an optimal experience on all devices.
